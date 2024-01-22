@@ -1,23 +1,68 @@
+@font-face {
+    font-family: outfit;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: young-serif;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
 body{
-    background-color: #f3efd8;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    margin: 0;
+    font-family: outfit;
+    color:#787672
+}
+h1{
+    color: black;
 }
 .container{
     border-radius: 1rem;
-    padding:1rem;
 }
 img{
-    border-radius: 1rem;
+    width: 100%;
 }
 .duration{
     background-color: #fff7fc;
     border-radius: 1rem;
+    padding: 1rem;
 }
 .duration>h3{
-    color: #735564;
+    color: #91667c;
 }
 h2{
     color:#7d6a63
+}
+.bold-text,.nutritional-value{
+    font-weight: bold;
+    color:#905633
+}
+h1,h2{
+    font-family: young-serif;
+}
+.recipe-details{
+    padding:1rem;
+    padding-top: 0;
+}
+table{
+    width: 100%;
+}
+@media only screen and (min-width:375px) {
+    body{
+        background-color: #f3efd8;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .container{
+        border-radius: 1rem;
+        padding:1rem;
+        width:66%;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        background-color: white;
+    }
+    img{
+        border-radius: 1rem;
+        width: 100%;
+    }
 }
